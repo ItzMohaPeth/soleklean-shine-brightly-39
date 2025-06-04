@@ -20,15 +20,20 @@ export const Hero = ({
       zIndex: 0
     }}>
         {/* Overlay with reduced opacity */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 to-white/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 to-white/40" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
-            SOLEKLEAN - Nettoyage Écologique de{" "}
-            <span className="text-blue-600">Panneaux Solaires</span>
+          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 flex flex-col items-center gap-4">
+            <img 
+              src="/logo.svg" 
+              alt="SOLEKLEAN" 
+              className="h-16 md:h-24 w-auto"
+            />
+            <span>Nettoyage Écologique de{" "}
+            <span className="text-blue-600">Panneaux Solaires</span></span>
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto">Expert en nettoyage professionnel et écologique de panneaux solaires, façades et vitrages. Boostez le rendement de vos installations photovoltaïques jusqu'à 30% avec nos solutions respectueuses de l'environnement. Intervention rapide partout , devis gratuit sous 24h.</p>
